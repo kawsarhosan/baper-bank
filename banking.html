@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    
+    <title>BankBondhu</title>
+</head>
+<body>
+    <header>
+        <h2 class="text-center text-4xl my-8">Data center of 
+            <span class="text-blue-700 font-semibold">BankBondhu</span>...!!!</h2>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <section>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="rounded p-16 bg-green-500 text-white">
+                    <h1 class="font-bold text-2xl">Deposit</h1>
+                    <h1 class="text-5xl">$ 00</h1>
+                </div>
+                <div class="rounded p-16 bg-red-500 text-white">
+                    <h1 class="font-bold text-2xl">Withdraw</h1>
+                    <h1 class="text-5xl">$ 00</h1>
+                </div>
+                <div class="rounded p-16 bg-yellow-500 text-white">
+                    <h1 class="font-bold text-2xl">Balance</h1>
+                    <h1 class="text-5xl">$ 00</h1>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mt-8">
+                <div class="rounded p-16 bg-blue-500 text-white">
+                    <input id="user-email" class="block m-auto my-5 w-3/4 rounded p-2" type="text" placeholder="Your Deposit Amount">
+            
+                    <button  id="submit-btn" class="bg-yellow-500 text-white px-8 py-3 font-bold rounded block m-auto">Deposit</button>
+                </div>
+                <div class="rounded p-16 bg-pink-500 text-white">
+                    <input id="user-email" class="block m-auto my-5 w-3/4 rounded p-2" type="text" placeholder="Your Withdraw Amount">
+            
+                    <button  id="submit-btn" class="bg-yellow-500 text-white px-8 py-3 font-bold rounded block m-auto">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center">
+        &copy; BankBondhu.com | All rights reservered
+    </footer>
+</body>
+</html>
