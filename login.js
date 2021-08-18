@@ -12,6 +12,7 @@
 
     if ( emailField == 'hello@kawsarhosan.com' && passField == 'sakil' ){
         // console.log('You are valid user!!');
+        alert('Welcome to your account!!!');
         window.location.href = 'banking.html';
     }
     else(

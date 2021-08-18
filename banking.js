@@ -23,14 +23,14 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
 })
 
 //withdraw btn working....
-document.getElementById('withdraw-btn').addEventListener('click', function(){
+    document.getElementById('withdraw-btn').addEventListener('click', function(){
     const withdrawInput = document.getElementById('withdraw-input');
     const withdrawAmount = withdrawInput.value;
     
     const withdrawTotal = document.getElementById('withdraw-total');
     const previousWithdrawAmount = withdrawTotal.innerText;
     const currentWithdrawTotal = parseFloat(withdrawAmount) + parseFloat(previousWithdrawAmount);
-    withdrawTotal.innerText = currentWithdrawTotal;
+    
 
     //update balance field
     const balanceTotal = document.getElementById('balance-total');
@@ -42,6 +42,7 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
         alert('You have insufficient balance..!!!')
     }    
     else{
+        withdrawTotal.innerText = currentWithdrawTotal;
         balanceTotal.innerText = updateBalance;
     }
 
@@ -53,4 +54,8 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
 
     //clear the withdraw input field....
     withdrawInput.value= '';
+})
+
+document.getElementById('logout-btn').addEventListener('click', function(){
+    window.location.href ='index.html';
 })
