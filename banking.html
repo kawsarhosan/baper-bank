@@ -19,33 +19,36 @@
             <div class="grid grid-cols-3 gap-4">
                 <div class="rounded p-16 bg-green-500 text-white">
                     <h1 class="font-bold text-2xl">Deposit</h1>
-                    <h1 class="text-5xl">$ 00</h1>
+                    <h1  class="text-5xl">$<span id="deposit-total">00</span></h1>
                 </div>
                 <div class="rounded p-16 bg-red-500 text-white">
                     <h1 class="font-bold text-2xl">Withdraw</h1>
-                    <h1 class="text-5xl">$ 00</h1>
+                    <h1 class="text-5xl">$<span id="withdraw-total">00</span> </h1>
                 </div>
                 <div class="rounded p-16 bg-yellow-500 text-white">
                     <h1 class="font-bold text-2xl">Balance</h1>
-                    <h1 class="text-5xl">$ 00</h1>
+                    <h1 class="text-5xl">$<span id="balance-total">100</span></h1>
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-4 mt-8">
-                <div class="rounded p-16 bg-blue-500 text-white">
-                    <input id="user-email" class="block m-auto my-5 w-3/4 rounded p-2" type="text" placeholder="Your Deposit Amount">
+            <div class="grid grid-cols-2 gap-4 mt-4">
+                <div class="rounded p-8 bg-blue-500 ">
+                    <input id="deposit-input" class="block m-auto my-5 w-3/4 rounded p-2" type="text" placeholder="Your Deposit Amount">
             
-                    <button  id="submit-btn" class="bg-yellow-500 text-white px-8 py-3 font-bold rounded block m-auto">Deposit</button>
+                    <button  id="deposit-btn" class="bg-yellow-500 text-white px-8 py-3 font-bold rounded block m-auto text-white">Deposit</button>
                 </div>
-                <div class="rounded p-16 bg-pink-500 text-white">
-                    <input id="user-email" class="block m-auto my-5 w-3/4 rounded p-2" type="text" placeholder="Your Withdraw Amount">
+
+                <div class="rounded p-8 bg-pink-500 ">
+                    <input id="withdraw-input" class="block m-auto my-5 w-3/4 rounded p-2" type="text" placeholder="Your Withdraw Amount">
             
-                    <button  id="submit-btn" class="bg-yellow-500 text-white px-8 py-3 font-bold rounded block m-auto">Withdraw</button>
+                    <button  id="withdraw-btn" class="bg-yellow-500 text-white px-8 py-3 font-bold rounded block m-auto">Withdraw</button>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="text-center">
+    <footer class="text-center mt-4">
         &copy; BankBondhu.com | All rights reservered
     </footer>
+
+    <script src="banking.js"></script>
 </body>
 </html>
